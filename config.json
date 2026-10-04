@@ -1,0 +1,32 @@
+{
+  "input": {
+    "source_type": "video",
+    "video_path": "data/sample.mp4",
+    "rtsp_url": "",
+    "rtsp_reconnect_delay_seconds": 5,
+    "rtsp_buffer_size": 1
+  },
+  "detection": {
+    "model_path": "models/yolov8n-face.pt",
+    "confidence_threshold": 0.5,
+    "detection_skip_frames": 5
+  },
+  "recognition": {
+    "similarity_threshold": 0.5,
+    "minimum_face_size": 30,
+    "model_path": "models/insightface/w600k_mbf.onnx"
+  },
+  "tracking": {
+    "max_disappeared_frames": 30
+  },
+  "database": {
+    "path": "data/faces.db"
+  },
+  "logging": {
+    "log_file": "logs/events.log"
+  },
+  "output": {
+    "show_window": true,
+    "save_video": false
+  }
+}

@@ -1,0 +1,46 @@
+# Byte-compiled / Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Large Video Files & Data
+data/*.mp4
+data/*.avi
+data/*.mov
+data/*.mkv
+data/*.db
+data/*.sqlite
+!data/.gitkeep
+
+# Logs & Event Artifacts
+logs/*.log
+logs/entries/*
+logs/exits/*
+!logs/entries/.gitkeep
+!logs/exits/.gitkeep
+
+# Model Weight Binaries
+models/*.pt
+models/*.onnx
+models/insightface/*.onnx
+!models/.gitkeep
+!models/README.md
+
+# IDEs & System Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary Notes
+*.notes.md
+PHASE_*_NOTES.md
